@@ -1,0 +1,616 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon May 30 18:25:13 2022
+# Process ID: 8552
+# Current directory: C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.runs/synth_1
+# Command line: vivado.exe -log topLevel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source topLevel.tcl
+# Log file: C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.runs/synth_1/topLevel.vds
+# Journal file: C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source topLevel.tcl -notrace
+Command: synth_design -top topLevel -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17932 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 698.871 ; gain = 177.297
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'topLevel' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/topLevel.v:23]
+INFO: [Synth 8-6157] synthesizing module 'QSEC' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/QSEC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fourBitCounter' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/fourBitCounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13664]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13664]
+INFO: [Synth 8-6155] done synthesizing module 'fourBitCounter' (2#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/fourBitCounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'QSEC' (3#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/QSEC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'lab7_clks' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:24]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:57]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (4#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 9.125000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 36.500000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (5#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (6#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (7#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:57]
+INFO: [Synth 8-6157] synthesizing module 'clkcntrl4' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:190]
+INFO: [Synth 8-6157] synthesizing module 'CB4CE_MXILINX_clkcntrl4' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:306]
+INFO: [Synth 8-6157] synthesizing module 'FTCE_MXILINX_clkcntrl4' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:276]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'XOR2' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81988]
+INFO: [Synth 8-6155] done synthesizing module 'XOR2' (8#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81988]
+INFO: [Synth 8-6157] synthesizing module 'FDCE' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13448]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDCE' (9#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13448]
+INFO: [Synth 8-6155] done synthesizing module 'FTCE_MXILINX_clkcntrl4' (10#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:276]
+INFO: [Synth 8-6157] synthesizing module 'AND4' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:562]
+INFO: [Synth 8-6155] done synthesizing module 'AND4' (11#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:562]
+INFO: [Synth 8-6157] synthesizing module 'AND3' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:514]
+INFO: [Synth 8-6155] done synthesizing module 'AND3' (12#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:514]
+INFO: [Synth 8-6157] synthesizing module 'AND2' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:466]
+INFO: [Synth 8-6155] done synthesizing module 'AND2' (13#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:466]
+INFO: [Synth 8-6157] synthesizing module 'VCC' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81391]
+INFO: [Synth 8-6155] done synthesizing module 'VCC' (14#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81391]
+INFO: [Synth 8-6155] done synthesizing module 'CB4CE_MXILINX_clkcntrl4' (15#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:306]
+INFO: [Synth 8-6157] synthesizing module 'BUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1021]
+INFO: [Synth 8-6155] done synthesizing module 'BUF' (16#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1021]
+WARNING: [Synth 8-3848] Net qsec in module/entity clkcntrl4 does not have driver. [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:194]
+INFO: [Synth 8-6155] done synthesizing module 'clkcntrl4' (17#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:190]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:40]
+INFO: [Synth 8-6157] synthesizing module 'STARTUPE2' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77870]
+	Parameter PROG_USR bound to: FALSE - type: string 
+	Parameter SIM_CCLK_FREQ bound to: 0.000000 - type: float 
+INFO: [Synth 8-6155] done synthesizing module 'STARTUPE2' (18#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77870]
+INFO: [Synth 8-6155] done synthesizing module 'lab7_clks' (19#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:24]
+WARNING: [Synth 8-7023] instance 'not_so_slow' of module 'lab7_clks' has 5 connections declared, but only 4 given [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/topLevel.v:46]
+INFO: [Synth 8-6157] synthesizing module 'coordinateGenerator' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/coordinateGenerator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'countUD2L' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/countUD2L.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'countUD2L' (20#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/countUD2L.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'coordinateGenerator' (21#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/coordinateGenerator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'plantRandomizer' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/plantRandomizer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LFSR' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/LFSR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FDRE__parameterized0' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13664]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized0' (21#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13664]
+INFO: [Synth 8-6155] done synthesizing module 'LFSR' (22#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/LFSR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'plantRandomizer' (23#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/plantRandomizer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'plantCounter' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/plantCounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'plantCounter' (24#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/plantCounter.v:23]
+WARNING: [Synth 8-7023] instance 'plantcount0' of module 'plantCounter' has 14 connections declared, but only 10 given [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/topLevel.v:77]
+WARNING: [Synth 8-7023] instance 'plantcount1' of module 'plantCounter' has 14 connections declared, but only 10 given [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/topLevel.v:78]
+WARNING: [Synth 8-7023] instance 'plantcount2' of module 'plantCounter' has 14 connections declared, but only 10 given [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/topLevel.v:79]
+INFO: [Synth 8-6157] synthesizing module 'plants' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/plants.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'plants' (25#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/plants.v:23]
+INFO: [Synth 8-6157] synthesizing module 'water' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/water.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'water' (26#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/water.v:23]
+INFO: [Synth 8-6157] synthesizing module 'frogJump' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/frogJump.v:23]
+INFO: [Synth 8-6157] synthesizing module 'frogCounter' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/frogCounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'countUD4L' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/countUD4L.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'countUD4L' (27#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/countUD4L.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'frogCounter' (28#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/frogCounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'frogJump' (29#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/frogJump.v:23]
+INFO: [Synth 8-6157] synthesizing module 'frog' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/frog.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'frog' (30#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/frog.v:23]
+INFO: [Synth 8-6157] synthesizing module 'colorSelector' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/colorSelector.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'colorSelector' (31#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/colorSelector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'stateMachine' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/stateMachine.v:23]
+WARNING: [Synth 8-3848] Net plantstart in module/entity stateMachine does not have driver. [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/stateMachine.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'stateMachine' (32#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/stateMachine.v:23]
+WARNING: [Synth 8-7023] instance 'states' of module 'stateMachine' has 14 connections declared, but only 13 given [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/topLevel.v:104]
+INFO: [Synth 8-6157] synthesizing module 'Timer' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/Timer.v:23]
+WARNING: [Synth 8-3848] Net flashsig in module/entity Timer does not have driver. [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/Timer.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'Timer' (33#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/Timer.v:23]
+WARNING: [Synth 8-7023] instance 'timecount' of module 'Timer' has 8 connections declared, but only 7 given [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/topLevel.v:105]
+INFO: [Synth 8-6157] synthesizing module 'scoreCounter' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/timerCounter.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/timerCounter.v:39]
+WARNING: [Synth 8-7023] instance 'full3' of module 'fourBitCounter' has 6 connections declared, but only 5 given [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/timerCounter.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'scoreCounter' (34#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/timerCounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hex7seg' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/hex7seg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'm8_1' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/m8_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'm8_1' (35#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/m8_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hex7seg' (36#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/hex7seg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ringCounter' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/ringCounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ringCounter' (37#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/ringCounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'selector' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/selector.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'selector' (38#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/selector.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'topLevel' (39#1) [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sources_1/new/topLevel.v:23]
+WARNING: [Synth 8-3917] design topLevel has port dp driven by constant 1
+WARNING: [Synth 8-3331] design Timer has unconnected port flashsig
+WARNING: [Synth 8-3331] design stateMachine has unconnected port plantstart
+WARNING: [Synth 8-3331] design colorSelector has unconnected port y[9]
+WARNING: [Synth 8-3331] design colorSelector has unconnected port y[8]
+WARNING: [Synth 8-3331] design clkcntrl4 has unconnected port qsec
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[15]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[14]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[13]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[12]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[11]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[10]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[9]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[8]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[7]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[6]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[5]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[4]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 763.754 ; gain = 242.180
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 763.754 ; gain = 242.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 763.754 ; gain = 242.180
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/constrs_1/imports/Lab7/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/constrs_1/imports/Lab7/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/constrs_1/imports/Lab7/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/topLevel_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/topLevel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 895.016 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 49 instances were transformed.
+  AND2 => LUT2: 12 instances
+  AND3 => LUT3: 6 instances
+  AND4 => LUT4: 6 instances
+  BUF => LUT1: 1 instances
+  XOR2 => LUT2: 24 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 895.016 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 895.016 ; gain = 373.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 895.016 ; gain = 373.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 895.016 ; gain = 373.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 895.016 ; gain = 373.441
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 19    
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 20    
+	   4 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module countUD2L 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module LFSR 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
+Module plantRandomizer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+Module plantCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+Module plants 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 3     
+Module countUD4L 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
+Module frogJump 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+Module frog 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
+Module colorSelector 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design topLevel has port dp driven by constant 1
+WARNING: [Synth 8-3331] design Timer has unconnected port flashsig
+WARNING: [Synth 8-3331] design colorSelector has unconnected port y[9]
+WARNING: [Synth 8-3331] design colorSelector has unconnected port y[8]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[15]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[14]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[13]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[12]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[11]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[10]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[9]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[8]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[7]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[6]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[5]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[4]
+WARNING: [Synth 8-3331] design topLevel has unconnected port led[3]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\yrandom/y09 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\yrandom/y29 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\yrandom/y19 )
+WARNING: [Synth 8-3332] Sequential element (clock/count1/q_3) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (clock/count1/q_2) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (clock/count1/q_1) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (clock/count1/q_0) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_37/I_Q0/I_36_35) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_37/I_Q1/I_36_35) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_37/I_Q2/I_36_35) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_37/I_Q3/I_36_35) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_44/I_Q0/I_36_35) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_44/I_Q1/I_36_35) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_44/I_Q2/I_36_35) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_44/I_Q3/I_36_35) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (yrandom/y09) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (yrandom/y19) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (yrandom/y29) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (score/full3/q_3) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (score/full3/q_2) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (score/full3/q_1) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (score/full3/q_0) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (timecount/quarter/q_3) is unused and will be removed from module topLevel.
+WARNING: [Synth 8-3332] Sequential element (timecount/quarter/q_2) is unused and will be removed from module topLevel.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 895.016 ; gain = 373.441
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 895.016 ; gain = 373.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 937.312 ; gain = 415.738
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 937.312 ; gain = 415.738
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 941.156 ; gain = 419.582
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 941.156 ; gain = 419.582
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 941.156 ; gain = 419.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 941.156 ; gain = 419.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 941.156 ; gain = 419.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 941.156 ; gain = 419.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |AND2       |     8|
+|2     |AND3       |     4|
+|3     |AND4       |     4|
+|4     |BUF        |     1|
+|5     |BUFG       |     3|
+|6     |CARRY4     |    47|
+|7     |LUT1       |     7|
+|8     |LUT2       |    53|
+|9     |LUT3       |    44|
+|10    |LUT4       |   156|
+|11    |LUT5       |   111|
+|12    |LUT6       |   124|
+|13    |MMCME2_ADV |     1|
+|14    |STARTUPE2  |     1|
+|15    |XOR2       |    16|
+|16    |FDCE       |    16|
+|17    |FDRE       |   152|
+|18    |IBUF       |     5|
+|19    |OBUF       |    29|
+|20    |OBUFT      |    13|
++------+-----------+------+
+
+Report Instance Areas: 
++------+----------------+---------------------------+------+
+|      |Instance        |Module                     |Cells |
++------+----------------+---------------------------+------+
+|1     |top             |                           |   795|
+|2     |  clock         |QSEC                       |    14|
+|3     |    count0      |fourBitCounter_37          |    14|
+|4     |  coords        |coordinateGenerator        |   144|
+|5     |    h0          |countUD2L                  |    25|
+|6     |    h1          |countUD2L_28               |    10|
+|7     |    h2          |countUD2L_29               |    11|
+|8     |    h3          |countUD2L_30               |    10|
+|9     |    h4          |countUD2L_31               |    16|
+|10    |    v0          |countUD2L_32               |    19|
+|11    |    v1          |countUD2L_33               |    15|
+|12    |    v2          |countUD2L_34               |    25|
+|13    |    v3          |countUD2L_35               |     4|
+|14    |    v4          |countUD2L_36               |     9|
+|15    |  froggy        |frog                       |     9|
+|16    |  jumpcontrol   |frogJump                   |   104|
+|17    |    counter     |frogCounter                |    43|
+|18    |      count0    |countUD4L                  |    32|
+|19    |      count1    |countUD4L_27               |    11|
+|20    |  not_so_slow   |lab7_clks                  |    55|
+|21    |    my_clk_inst |clk_wiz_0                  |     4|
+|22    |    slowclk     |clkcntrl4                  |    50|
+|23    |      XLXI_38   |CB4CE_MXILINX_clkcntrl4    |    12|
+|24    |        I_Q0    |FTCE_MXILINX_clkcntrl4_23  |     2|
+|25    |        I_Q1    |FTCE_MXILINX_clkcntrl4_24  |     2|
+|26    |        I_Q2    |FTCE_MXILINX_clkcntrl4_25  |     2|
+|27    |        I_Q3    |FTCE_MXILINX_clkcntrl4_26  |     2|
+|28    |      XLXI_39   |CB4CE_MXILINX_clkcntrl4_9  |    12|
+|29    |        I_Q0    |FTCE_MXILINX_clkcntrl4_19  |     2|
+|30    |        I_Q1    |FTCE_MXILINX_clkcntrl4_20  |     2|
+|31    |        I_Q2    |FTCE_MXILINX_clkcntrl4_21  |     2|
+|32    |        I_Q3    |FTCE_MXILINX_clkcntrl4_22  |     2|
+|33    |      XLXI_40   |CB4CE_MXILINX_clkcntrl4_10 |    12|
+|34    |        I_Q0    |FTCE_MXILINX_clkcntrl4_15  |     2|
+|35    |        I_Q1    |FTCE_MXILINX_clkcntrl4_16  |     2|
+|36    |        I_Q2    |FTCE_MXILINX_clkcntrl4_17  |     2|
+|37    |        I_Q3    |FTCE_MXILINX_clkcntrl4_18  |     2|
+|38    |      XLXI_45   |CB4CE_MXILINX_clkcntrl4_11 |    12|
+|39    |        I_Q0    |FTCE_MXILINX_clkcntrl4     |     2|
+|40    |        I_Q1    |FTCE_MXILINX_clkcntrl4_12  |     2|
+|41    |        I_Q2    |FTCE_MXILINX_clkcntrl4_13  |     2|
+|42    |        I_Q3    |FTCE_MXILINX_clkcntrl4_14  |     2|
+|43    |  plant0        |plants                     |    14|
+|44    |  plant1        |plants_0                   |    14|
+|45    |  plant2        |plants_1                   |    14|
+|46    |  plantcount0   |plantCounter               |    71|
+|47    |  plantcount1   |plantCounter_2             |    72|
+|48    |  plantcount2   |plantCounter_3             |    72|
+|49    |  rings         |ringCounter                |    19|
+|50    |  score         |scoreCounter               |    42|
+|51    |    full0       |fourBitCounter_5           |    12|
+|52    |    full1       |fourBitCounter_6           |    11|
+|53    |    full2       |fourBitCounter_7           |     7|
+|54    |    quarter     |fourBitCounter_8           |    12|
+|55    |  states        |stateMachine               |    17|
+|56    |  timecount     |Timer                      |    10|
+|57    |    full0       |fourBitCounter             |     8|
+|58    |    quarter     |fourBitCounter_4           |     2|
+|59    |  yrandom       |plantRandomizer            |    72|
+|60    |    random      |LFSR                       |    15|
++------+----------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 941.156 ; gain = 419.582
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 38 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 941.156 ; gain = 288.320
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 941.156 ; gain = 419.582
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 82 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 941.156 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 33 instances were transformed.
+  AND2 => LUT2: 8 instances
+  AND3 => LUT3: 4 instances
+  AND4 => LUT4: 4 instances
+  BUF => LUT1: 1 instances
+  XOR2 => LUT2: 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+98 Infos, 69 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 941.156 ; gain = 650.066
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 941.156 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+WARNING: [Runs 36-115] Could not delete directory 'C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.runs/synth_1/.Xil/Vivado-8552-Envy/dcp0'.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.runs/synth_1/topLevel.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file topLevel_utilization_synth.rpt -pb topLevel_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May 30 18:25:51 2022...

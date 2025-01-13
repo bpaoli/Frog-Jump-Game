@@ -1,0 +1,59 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2abb36ec5a22465bacb87c528cee3751 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mySim_behav xil_defaultlib.mySim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'seg' [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sim_1/new/mySim.v:33]
+WARNING: [VRFC 10-3283] element index 7 into 'seg' is out of bounds [C:/Users/bradl/Dropbox/Documents/CSE_100/Lab7/Lab7/Lab7.srcs/sim_1/new/mySim.v:33]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.fourBitCounter
+Compiling module xil_defaultlib.QSEC
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=9.125...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.XOR2
+Compiling module unisims_ver.FDCE_default
+Compiling module xil_defaultlib.FTCE_MXILINX_clkcntrl4
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.AND4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.AND3
+Compiling module unisims_ver.AND2
+Compiling module unisims_ver.VCC
+Compiling module xil_defaultlib.CB4CE_MXILINX_clkcntrl4
+Compiling module unisims_ver.BUF
+Compiling module xil_defaultlib.clkcntrl4
+Compiling module unisims_ver.STARTUPE2
+Compiling module xil_defaultlib.lab7_clks
+Compiling module xil_defaultlib.countUD2L
+Compiling module xil_defaultlib.coordinateGenerator
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.LFSR
+Compiling module xil_defaultlib.plantRandomizer
+Compiling module xil_defaultlib.plantCounter
+Compiling module xil_defaultlib.plants
+Compiling module xil_defaultlib.water
+Compiling module xil_defaultlib.countUD4L
+Compiling module xil_defaultlib.frogCounter
+Compiling module xil_defaultlib.frogJump
+Compiling module xil_defaultlib.frog
+Compiling module xil_defaultlib.colorSelector
+Compiling module xil_defaultlib.stateMachine
+Compiling module xil_defaultlib.Timer
+Compiling module xil_defaultlib.scoreCounter
+Compiling module xil_defaultlib.m8_1
+Compiling module xil_defaultlib.hex7seg
+Compiling module xil_defaultlib.ringCounter
+Compiling module xil_defaultlib.selector
+Compiling module xil_defaultlib.topLevel
+Compiling module xil_defaultlib.mySim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mySim_behav

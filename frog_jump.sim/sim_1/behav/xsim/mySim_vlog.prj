@@ -1,0 +1,32 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Lab7.srcs/sources_1/new/LFSR.v" \
+"../../../../Lab7.srcs/sources_1/new/QSEC.v" \
+"../../../../Lab7.srcs/sources_1/new/Timer.v" \
+"../../../../Lab7.srcs/sources_1/new/colorSelector.v" \
+"../../../../Lab7.srcs/sources_1/new/coordinateGenerator.v" \
+"../../../../Lab7.srcs/sources_1/new/countUD2L.v" \
+"../../../../Lab7.srcs/sources_1/new/countUD4L.v" \
+"../../../../Lab7.srcs/sources_1/new/fourBitCounter.v" \
+"../../../../Lab7.srcs/sources_1/new/frog.v" \
+"../../../../Lab7.srcs/sources_1/new/frogCounter.v" \
+"../../../../Lab7.srcs/sources_1/new/frogJump.v" \
+"../../../../Lab7.srcs/sources_1/new/hex7seg.v" \
+"../../../../Lab7.srcs/sources_1/new/lab7_clks.v" \
+"../../../../Lab7.srcs/sources_1/new/m8_1.v" \
+"../../../../Lab7.srcs/sources_1/new/plantCounter.v" \
+"../../../../Lab7.srcs/sources_1/new/plantRandomizer.v" \
+"../../../../Lab7.srcs/sources_1/new/plants.v" \
+"../../../../Lab7.srcs/sources_1/new/ringCounter.v" \
+"../../../../Lab7.srcs/sources_1/new/selector.v" \
+"../../../../Lab7.srcs/sources_1/new/stateMachine.v" \
+"../../../../Lab7.srcs/sources_1/new/timerCounter.v" \
+"../../../../Lab7.srcs/sources_1/new/topLevel.v" \
+"../../../../Lab7.srcs/sources_1/new/water.v" \
+"../../../../Lab7.srcs/sim_1/new/mySim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
